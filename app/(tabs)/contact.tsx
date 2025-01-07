@@ -12,7 +12,6 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Footer from '@/components/Footer';
-import emailjs from 'emailjs-com'; // Add EmailJS
 
 export default function ContactScreen() {
   const navigation = useNavigation();
@@ -27,47 +26,7 @@ export default function ContactScreen() {
   const handleChange = (field, value) => {
     setForm({ ...form, [field]: value });
   };
-
-  // const handleSubmit = () => {
-  //   if (!form.fullName || !form.email || !form.message) {
-  //     alert('Please fill out all required fields.');
-  //     return;
-  //   }
-
-  //   // EmailJS Config
-  //   const serviceID = 'service_1xcaqtr';
-  //   const templateID = 'template_ut4onwb';
-  //   const userID = 'JD2TDqPZCQimXWThN';
-
-  //   const templateParams = {
-  //     from_name: form.fullName,
-  //     to_name: 'Admin', // Replace with the recipient's name
-  //     message: form.message,
-  //     email: form.email,
-  //     mobile: form.mobile || 'N/A', // Default if no mobile provided
-  //     supportGoodPeople: form.supportGoodPeople || 'N/A',
-  //   };
-
-  //   emailjs
-  //     .send(serviceID, templateID, templateParams, userID)
-  //     .then((response) => {
-  //       console.log('SUCCESS!', response.status, response.text);
-  //       alert('Message Sent Successfully!');
-  //       setForm({
-  //         fullName: '',
-  //         email: '',
-  //         mobile: '',
-  //         message: '',
-  //         supportGoodPeople: '',
-  //       }); // Reset form
-  //     })
-  //     .catch((error) => {
-  //       console.error('FAILED...', error);
-  //       alert('Failed to send message. Please try again.');
-  //     });
-  // };
-
-
+  
   const handleEmail = () => {
     const subject = encodeURIComponent('Contact Form Submission');
     const body = encodeURIComponent(
@@ -77,9 +36,9 @@ export default function ContactScreen() {
   Message: ${form.message}
   Support Good People: ${form.supportGoodPeople}`
     );
-  
+
     const mailtoUrl = `mailto:yogayogking@gmail.com?subject=${subject}&body=${body}`;
-  
+
     Linking.openURL(mailtoUrl).catch((err) =>
       console.error('Error opening email client:', err)
     );
