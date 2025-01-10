@@ -26,21 +26,21 @@ export default function ContactScreen() {
   const handleChange = (field, value) => {
     setForm({ ...form, [field]: value });
   };
-  
+
   const handleEmail = () => {
-    const subject = encodeURIComponent('Contact Form Submission');
+    const subject = encodeURIComponent('Contact Form Submission Yogayogking');
     const body = encodeURIComponent(
-      `Full Name: ${form.fullName}
-  Email: ${form.email}
-  Mobile: ${form.mobile}
-  Message: ${form.message}
-  Support Good People: ${form.supportGoodPeople}`
+      `Name: ${form.fullName}
+      Email: ${form.email}
+      Mobile: ${form.mobile}
+      Message: ${form.message}
+      Support Good People: ${form.supportGoodPeople}`
     );
 
     const mailtoUrl = `mailto:yogayogking@gmail.com?subject=${subject}&body=${body}`;
 
     Linking.openURL(mailtoUrl).catch((err) =>
-      console.error('Error opening email client:', err)
+      console.error('Error opening email:', err)
     );
   };
 
