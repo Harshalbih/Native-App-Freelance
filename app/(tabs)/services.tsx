@@ -6,37 +6,37 @@ const services = [
   {
     title: "2 Cr. Backup Cover",
     description: "Secure your assets with our extensive 2 Cr. backup cover.",
-    image: require('@/assets/images/backup-cover.webp'), // Placeholder image
+    image: require('@/assets/images/backup-cover.webp'), 
   },
   {
     title: "Engine Insurance",
     description: "Comprehensive engine protection for your vehicle.",
-    image: require('@/assets/images/engine.jpg'), // Placeholder image
+    image: require('@/assets/images/engine.jpg'), 
   },
   {
     title: "Digital Currency",
     description: "Empowering you with secure digital currency solutions.",
-    image: require('@/assets/images/ecurrency.png'), // Placeholder image
+    image: require('@/assets/images/ecurrency.png'), 
   },
   {
     title: "Vehicle Number Plate",
     description: "Get custom-designed vehicle number plates quickly.",
-    image: require('@/assets/images/numberplate.jpg'), // Placeholder image
+    image: require('@/assets/images/numberplate.jpg'), 
   },
   {
     title: "Jobs and Vacancy",
     description: "Explore job opportunities that match your skills.",
-    image: require('@/assets/images/jobvacancy.jpg'), // Placeholder image
+    image: require('@/assets/images/jobvacancy.jpg'), 
   },
   {
     title: "Product Selling and Buying",
     description: "A seamless platform for buying and selling products.",
-    image: require('@/assets/images/product.png'), // Placeholder image
+    image: require('@/assets/images/product.png'), 
   },
   {
     title: "Social Help",
     description: "Dedicated to offering assistance to those in need.",
-    image: require('@/assets/images/socialhelp.jpg'), // Placeholder image
+    image: require('@/assets/images/socialhelp.jpg'), 
   },
 ];
 
@@ -71,12 +71,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     margin: 10,
     textAlign: 'center',
-    padding: 10, // Add padding inside the border
-    borderWidth: 2, // Border thickness
-    borderColor: '#2b5f89', // Border color
-    borderRadius: 10, // Smooth rounded corners
-    backgroundColor: '#f0f8ff', // Light background color for contrast
-    color: '#2b5f89', // Text color matching border for aesthetics
+    padding: 10,
+    borderWidth: 2, 
+    borderColor: '#2b5f89', 
+    borderRadius: 10, 
+    backgroundColor: '#f0f8ff', 
+    color: '#2b5f89', 
     overflow: 'hidden',
   }, 
   card: {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
-    elevation: 4, // Shadow for Android
+    elevation: 4,
   },
   cardImage: {
     width: '100%',

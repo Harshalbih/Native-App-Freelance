@@ -15,7 +15,6 @@ import ContactScreen from './(tabs)/contact';
 import CustomDrawerContent from '@/components/CustomDrawerContent';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 const Drawer = createDrawerNavigator();
@@ -39,8 +38,8 @@ export default function RootLayout() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <StatusBar
-        translucent={true} // Make the status bar translucent
-        backgroundColor="transparent" // Allow system default background
+        translucent={true} 
+        backgroundColor="transparent"
         barStyle={colorScheme === 'dark' ? 'light-content' : 'dark-content'}
       />
 
@@ -48,7 +47,7 @@ export default function RootLayout() {
         drawerContent={(props) => <CustomDrawerContent {...props} />}
         screenOptions={{
           drawerStyle: {
-            backgroundColor: '#2b5f89', // Match drawer background
+            backgroundColor: '#2b5f89', 
             width: 260,
           },
           headerStyle: {
@@ -69,9 +68,9 @@ export default function RootLayout() {
               }}
             />
           ),
-          drawerActiveBackgroundColor: '#ffffff', // White background for active tab
-          drawerActiveTintColor: '#2b5f89', // Highlighted text color
-          drawerInactiveTintColor: '#ddd', // Inactive text color
+          drawerActiveBackgroundColor: '#ffffff',
+          drawerActiveTintColor: '#2b5f89', 
+          drawerInactiveTintColor: '#ddd', 
         }}
       >
         <Drawer.Screen

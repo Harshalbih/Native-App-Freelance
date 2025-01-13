@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet, Animated, Dimensions } from 'react-native';
-import { WebView } from 'react-native-webview'; // Import WebView
+import { WebView } from 'react-native-webview'; 
 import Footer from '@/components/Footer';
 
-const { width } = Dimensions.get('window'); // Get screen width for responsive frames
+const { width } = Dimensions.get('window'); 
 
 // YouTube videos list
 const videos = [
@@ -22,7 +22,6 @@ export default function VideosScreen() {
           Stay tuned for more Videos.
         </Text>
 
-        {/* YouTube Videos */}
         <View style={styles.videoContainer}>
           {videos.map((video) => (
             <View key={video.id} style={styles.videoFrame}>
@@ -54,12 +53,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     margin: 10,
     textAlign: 'center',
-    padding: 10, // Add padding inside the border
-    borderWidth: 2, // Border thickness
-    borderColor: '#2b5f89', // Border color
-    borderRadius: 10, // Smooth rounded corners
-    backgroundColor: '#f0f8ff', // Light background color for contrast
-    color: '#2b5f89', // Text color matching border for aesthetics
+    padding: 10, 
+    borderWidth: 2, 
+    borderColor: '#2b5f89', 
+    borderRadius: 10, 
+    backgroundColor: '#f0f8ff', 
+    color: '#2b5f89', 
     overflow: 'hidden',
   }, 
   text: {
@@ -77,8 +76,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
     overflow: 'hidden',
-    elevation: 5, // Add shadow for Android
-    shadowColor: '#000', // Add shadow for iOS
+    elevation: 5, 
+    shadowColor: '#000',
     shadowOpacity: 0.2,
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 2 },
@@ -95,7 +94,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   webview: {
-    width: width - 40, // Make the WebView responsive
-    height: 200, // Fixed height for video frames
+    width: width - 40, 
+    height: 200, 
   },
 });

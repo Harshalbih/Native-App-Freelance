@@ -55,14 +55,12 @@ export default function ContactScreen() {
   return (
     <Animated.ScrollView>
       <View style={styles.container}>
-        {/* Heading */}
         <View style={styles.contactsection}>
           <Text style={styles.heading}>Contact Us</Text>
           <Text style={styles.subheading}>
             Feel free to ask for details, don't save any questions!
           </Text>
 
-          {/* Form Fields */}
           <TextInput
             style={styles.input}
             placeholder="Full Name *"
@@ -91,7 +89,6 @@ export default function ContactScreen() {
             onChangeText={(text) => handleChange('message', text)}
           />
 
-          {/* New Question */}
           <Text style={styles.questionText}>Do You Want To Support Good People?</Text>
           <View style={styles.radioGroup}>
             <TouchableOpacity
@@ -122,17 +119,14 @@ export default function ContactScreen() {
             </TouchableOpacity>
           </View>
 
-          {/* Send Button */}
           <TouchableOpacity style={styles.button} onPress={handleEmail}>
             <Text style={styles.buttonText}>SEND MESSAGE</Text>
           </TouchableOpacity>
         </View>
 
-        {/* Quick Contact Links */}
         <View style={styles.quickContactContainer}>
           <Text style={styles.locationText}>Quick Contact:</Text>
           <View style={styles.iconRow}>
-            {/* Phone */}
             <TouchableOpacity
               style={styles.iconCard}
               onPress={() => openLink('tel:9545339997')}
@@ -143,7 +137,6 @@ export default function ContactScreen() {
               />
             </TouchableOpacity>
 
-            {/* Email */}
             <TouchableOpacity
               style={styles.iconCard}
               onPress={() => openLink('mailto:yogayogking@gmail.com')}
@@ -154,7 +147,6 @@ export default function ContactScreen() {
               />
             </TouchableOpacity>
 
-            {/* WhatsApp */}
             <TouchableOpacity
               style={styles.iconCard}
               onPress={() => openLink('https://wa.me/9545339997')}
@@ -165,7 +157,6 @@ export default function ContactScreen() {
               />
             </TouchableOpacity>
 
-            {/* YouTube */}
             <TouchableOpacity
               style={styles.iconCard}
               onPress={() =>
@@ -180,7 +171,6 @@ export default function ContactScreen() {
           </View>
         </View>
 
-        {/* Location Link */}
         <View style={styles.locationContainer}>
           <Text style={styles.locationText}>Find Us Here:</Text>
           <TouchableOpacity onPress={openLocation} style={styles.mapLinkContainer}>
@@ -203,7 +193,6 @@ export default function ContactScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Footer */}
         <Footer />
       </View>
     </Animated.ScrollView>
@@ -225,12 +214,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     margin: 10,
     textAlign: 'center',
-    padding: 10, // Add padding inside the border
-    borderWidth: 2, // Border thickness
-    borderColor: '#2b5f89', // Border color
-    borderRadius: 10, // Smooth rounded corners
-    backgroundColor: '#f0f8ff', // Light background color for contrast
-    color: '#2b5f89', // Text color matching border for aesthetics
+    padding: 10,
+    borderWidth: 2, 
+    borderColor: '#2b5f89',
+    borderRadius: 10, 
+    backgroundColor: '#f0f8ff',
+    color: '#2b5f89', 
     overflow: 'hidden',
   },
   subheading: {

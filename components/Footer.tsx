@@ -42,7 +42,7 @@ export default function Footer() {
 
       <View style={styles.contact}>
       <Image
-            source={require('@/assets/images/logo.webp')} // Replace with the uploaded image path
+            source={require('@/assets/images/logo.webp')} 
             style={styles.cardImage}
           />
         <Text style={styles.sectionTitle}>Yogayogking.com</Text>

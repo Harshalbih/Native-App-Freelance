@@ -11,20 +11,19 @@ export default function AboutScreen() {
         {/* Card with Image */}
         <View style={styles.card}>
           <Image
-            source={require('@/assets/images/sonpic.jpg')} // Replace with the uploaded image path
+            source={require('@/assets/images/sonpic.jpg')} 
             style={styles.cardImage}
           />
           <Text style={styles.cardTitle}>DIRECTOR TO BE</Text>
         </View>
         <View style={styles.card}>
           <Image
-            source={require('@/assets/images/chairmantobe.webp')} // Replace with the uploaded image path
+            source={require('@/assets/images/chairmantobe.webp')} 
             style={styles.cardImage}
           />
           <Text style={styles.cardTitle}>YOGAYOGSELF</Text>
         </View>
 
-        {/* Existing About Us Content */}
         <Text style={styles.text}>
           # Welcome to Yogayogking, your Founded in 2021 by coding number.9997 and based in the
           vibrant city of Pune, India, Yogayogking is committed to providing top-notch services with

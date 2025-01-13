@@ -61,7 +61,6 @@ export default function HomeScreen() {
   return (
     <Animated.ScrollView>
       <View style={styles.container}>
-        {/* Welcome Content */}
         <View style={styles.contentContainer}>
           <Text style={styles.title}>Welcome to YogaYogKing</Text>
           <Text style={styles.description}>• Helping Hand •</Text>
@@ -69,7 +68,6 @@ export default function HomeScreen() {
           <Text style={styles.description}>• Contact Anytime for Anything •</Text>
         </View>
 
-        {/* Slideshow */}
         <View style={styles.carouselContainer}>
           <ScrollView
             ref={scrollViewRef}
@@ -88,7 +86,6 @@ export default function HomeScreen() {
             ))}
           </ScrollView>
 
-          {/* Pagination */}
           <View style={styles.pagination}>
             {slides.map((_, index) => (
               <View
@@ -104,7 +101,6 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* Membership Card */}
         <View style={styles.membershipCard}>
           <Text style={styles.membershipTitle}>Join Our Membership</Text>
           <Text style={styles.membershipDescription}>499 rs only for a year</Text>
