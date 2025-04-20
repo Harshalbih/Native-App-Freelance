@@ -11,6 +11,13 @@ export default function AboutScreen() {
         {/* Card with Image */}
         <View style={styles.card}>
           <Image
+            source={require('@/assets/images/ceoo.jpg')} 
+            style={styles.cardImage}
+          />
+          <Text style={styles.cardTitle}>CEO</Text>
+        </View>
+        <View style={styles.card}>
+          <Image
             source={require('@/assets/images/sonpic.jpg')} 
             style={styles.cardImage}
           />
