@@ -21,7 +21,7 @@ const services = [
   {
     title: "Vehicle Number Plate",
     description: "Get custom-designed vehicle number plates quickly.",
-    image: require('@/assets/images/numberplate.jpg'), 
+    image: require('@/assets/images/numtwo.webp'), 
   },
   {
     title: "Jobs and Vacancy",
