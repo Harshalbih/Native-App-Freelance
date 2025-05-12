@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 
 const services = [
   {
-    title: "2 Cr. Backup Cover",
-    description: "Secure your assets with our extensive 2 Cr. backup cover.",
+    title: "Backup Cover",
+    description: "Secure your assets with our extensive upto 2 Cr. backup cover.",
     image: require('@/assets/images/backup-cover.webp'), 
   },
   {

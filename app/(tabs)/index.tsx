@@ -103,7 +103,7 @@ export default function HomeScreen() {
 
         <View style={styles.membershipCard}>
           <Text style={styles.membershipTitle}>Join Our Membership</Text>
-          <Text style={styles.membershipDescription}>499 rs only for a year</Text>
+          <Text style={styles.membershipDescription}>Exicting Offer Available</Text>
           <TouchableOpacity
             onPress={() => navigation.navigate('Contact Us')}
             style={styles.joinButton}
