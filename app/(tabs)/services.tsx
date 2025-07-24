@@ -19,16 +19,6 @@ const services = [
     image: require('@/assets/images/ecurrency.png'), 
   },
   {
-    title: "Vehicle Number Plate",
-    description: "Get custom-designed vehicle number plates quickly.",
-    image: require('@/assets/images/numtwo.webp'), 
-  },
-  {
-    title: "Jobs and Vacancy",
-    description: "Explore job opportunities that match your skills.",
-    image: require('@/assets/images/jobvacancy.jpg'), 
-  },
-  {
     title: "Product Selling and Buying",
     description: "A seamless platform for buying and selling products.",
     image: require('@/assets/images/product.png'), 
