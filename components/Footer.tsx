@@ -35,6 +35,9 @@ export default function Footer() {
         <TouchableOpacity onPress={() => navigation.navigate('Videos')}>
           <Text style={styles.link}>• Video Gallery</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Members')}>
+          <Text style={styles.link}>• Members</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Contact Us')}>
           <Text style={styles.link}>• Contact Us</Text>
         </TouchableOpacity>

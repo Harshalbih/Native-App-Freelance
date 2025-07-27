@@ -11,6 +11,7 @@ import HomeScreen from './(tabs)/index';
 import AboutScreen from './(tabs)/about';
 import ServicesScreen from './(tabs)/services';
 import VideosScreen from './(tabs)/videos';
+import MembersScreen from './(tabs)/members';
 import ContactScreen from './(tabs)/contact';
 import CustomDrawerContent from '@/components/CustomDrawerContent';
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -106,6 +107,15 @@ export default function RootLayout() {
           options={{
             drawerIcon: ({ color, size }) => (
               <Icon name="book" size={size} color={color} />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="Members"
+          component={MembersScreen}
+          options={{
+            drawerIcon: ({ color, size }) => (
+              <Icon name="info-circle" size={size} color={color} />
             ),
           }}
         />

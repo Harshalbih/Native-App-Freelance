@@ -6,27 +6,53 @@ const services = [
   {
     title: "Backup Cover",
     description: "Secure your assets with our extensive upto 2 Cr. backup cover.",
-    image: require('@/assets/images/backup-cover.webp'), 
+    image: require('@/assets/images/backup-cover.webp'),
   },
   {
     title: "Engine Insurance",
     description: "Comprehensive engine protection for your vehicle.",
-    image: require('@/assets/images/engine.jpg'), 
+    image: require('@/assets/images/engine.jpg'),
   },
   {
     title: "Digital Currency",
     description: "Empowering you with secure digital currency solutions.",
-    image: require('@/assets/images/ecurrency.png'), 
+    image: require('@/assets/images/ecurrency.png'),
   },
   {
     title: "Product Selling and Buying",
     description: "A seamless platform for buying and selling products.",
-    image: require('@/assets/images/product.png'), 
+    image: require('@/assets/images/product.png'),
   },
   {
     title: "Social Help",
     description: "Dedicated to offering assistance to those in need.",
-    image: require('@/assets/images/socialhelp.jpg'), 
+    image: require('@/assets/images/socialhelp.jpg'),
+  },
+  {
+    title: "Our Services",
+    description: `• 0 to 36 return bonus.
+• 1 partial return bonus.
+• Start with 1 rupees to investmen.
+• 1 year lockin period.
+• Investment membership 2 crore backup cover.
+• 500 rupees per year.
+• Return your money in one call.
+• Join now tension free life.
+• Pre social work.
+• 500 per yearly membership.
+• Two wheeler engine insurance.
+• Investment
+• Share market
+• Mutual fund
+• Bond
+• Gold
+• And joining membership.
+• 1st Referance amount bonus.`,
+image: require('@/assets/images/icon.png'),
+  },
+  {
+    title: "Our Partner",
+image: require('@/assets/images/garage.jpeg'),
   },
 ];
 
@@ -34,14 +60,14 @@ export default function ServicesScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <ScrollView contentContainerStyle={styles.container2}>
-      <Text style={styles.heading}>Our Services/Products</Text>
-      {services.map((service, index) => (
-        <View key={index} style={styles.card}>
-          <Image source={service.image} style={styles.cardImage} />
-          <Text style={styles.cardTitle}>{service.title}</Text>
-          <Text style={styles.cardDescription}>{service.description}</Text>
-        </View>
-      ))}
+        <Text style={styles.heading}>Our Services/Products</Text>
+        {services.map((service, index) => (
+          <View key={index} style={styles.card}>
+            <Image source={service.image} style={styles.cardImage} />
+            <Text style={styles.cardTitle}>{service.title}</Text>
+            <Text style={styles.cardDescription}>{service.description}</Text>
+          </View>
+        ))}
       </ScrollView>
       <Footer />
     </ScrollView>
@@ -62,13 +88,13 @@ const styles = StyleSheet.create({
     margin: 10,
     textAlign: 'center',
     padding: 10,
-    borderWidth: 2, 
-    borderColor: '#2b5f89', 
-    borderRadius: 10, 
-    backgroundColor: '#f0f8ff', 
-    color: '#2b5f89', 
+    borderWidth: 2,
+    borderColor: '#2b5f89',
+    borderRadius: 10,
+    backgroundColor: '#f0f8ff',
+    color: '#2b5f89',
     overflow: 'hidden',
-  }, 
+  },
   card: {
     backgroundColor: '#fff',
     borderRadius: 12,
